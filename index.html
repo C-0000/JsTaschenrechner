@@ -1,10 +1,12 @@
 
 <!DOCTYPE html>
 <html>
-<head>Taschenrechner</title>
-    <script type="text/javascript" src="script.js"></script>
+<head>
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <div class="zero">
     <input type="text" id="io" disabled>
     <br>
     <button onclick="Eingabe(1)">1</button>
@@ -12,19 +14,21 @@
     <button onclick="Eingabe(3)">3</button>
     <button onclick="Eingabe('+')">+</button>
     <br>
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
-    <button>-</button>
+    <button onclick="Eingabe(4)">4</button>
+    <button onclick="Eingabe(5)">5</button>
+    <button onclick="Eingabe(6)">6</button>
+    <button onclick="Eingabe('-')">-</button>
     <br>
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
-    <button>*</button>
+    <button onclick="Eingabe(7)">7</button>
+    <button onclick="Eingabe(8)">8</button>
+    <button onclick="Eingabe(9)">9</button>
+    <button onclick="Eingabe('*')">*</button>
     <br>
-    <button>0</button>
-    <button>/</button>
+    <button onclick="Eingabe(0)">0</button>
+    <button onclick="Eingabe('/')">/</button>
     <br>
-    <button>=</button>
+    <button onclick="Rechnen()">=</button>
     <button onclick="IoClear()">C</button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
